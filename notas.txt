@@ -1,0 +1,5 @@
+HC12:
+Enable serial comunication with:
+	raspi-config
+Check serial port:
+	 dmesg | grep tty

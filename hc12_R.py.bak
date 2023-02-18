@@ -18,7 +18,7 @@ try:
         device_id = device_info[0]
         device_type = device_info[1]
 
-        text = items_list[1]
+	text = items_list[1]
 
         if device_type == 'u':
             output = f'{device_id}: {text}'

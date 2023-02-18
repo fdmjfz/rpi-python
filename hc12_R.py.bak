@@ -13,8 +13,8 @@ try:
         message = message.replace('>', '')
 
         items_list = message.split('~')
-        device_id = items_list[0]
-        text = items_list[1]
+	device_id = items_list[0]
+	text = items_list[1]
 
         output = f'{device_id}: {text}'
         print(output)

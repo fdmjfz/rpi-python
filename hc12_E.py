@@ -14,7 +14,7 @@ try:
     while 1:
         message = input("Mensaje: ")
 
-        message = f'{device_id},{device_type}~' + message
+        message = f'u{device_id}~' + message
         message = message + '>'
         ser.write( bytes( message, encoding='utf8'))
 

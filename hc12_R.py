@@ -4,7 +4,6 @@ import serial
 ser = serial.Serial(
     port='/dev/ttyS0',
     baudrate = 9600,
-    timeout=5
 )
 
 try:
@@ -16,8 +15,8 @@ try:
         items_list = message.split('~')
 
         device_info = items_list[0]
-        device_id = device_info[0]
-        device_type = device_info[1:]
+        device_type = device_info[0]
+        device_id = device_info[1:]
 
         text = items_list[1]
 
